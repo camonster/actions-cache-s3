@@ -35,6 +35,7 @@ async function run(): Promise<void> {
                 s3config,
                 s3BucketName
             );
+            core.debug(`restore.cacheKey:::${cacheKey}`)
             if (!cacheKey) {
                 core.info(
                     `Cache not found for input keys: ${[
