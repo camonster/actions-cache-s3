@@ -25,7 +25,11 @@ async function run(): Promise<void> {
         });
         const s3BucketName = core.getInput(Inputs.AWSS3Bucket);
         const s3config = utils.getInputS3ClientConfig();
-
+        core.debug(`restore.primaryKey:::${primaryKey}`)
+        core.debug(`restore.restoreKeys:::${restoreKeys}`)
+        core.debug(`restore.cachePaths:::${cachePaths}`)
+        core.debug(`restore.s3BucketName:::${s3BucketName}`)
+        core.debug(`restore.s3config:::${s3config}`)
         try {
             const cacheKey = await cache.restoreCache(
                 cachePaths,
