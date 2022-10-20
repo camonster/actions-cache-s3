@@ -50,6 +50,8 @@ async function run(): Promise<void> {
             utils.setCacheState(cacheKey);
 
             const isExactKeyMatch = utils.isExactKeyMatch(primaryKey, cacheKey);
+            core.debug(`restore.isExactKeyMatch:::${isExactKeyMatch}, ${primaryKey}, ${cacheKey}`)
+
             utils.setCacheHitOutput(isExactKeyMatch);
 
             core.info(`Cache restored from key: ${cacheKey}`);
