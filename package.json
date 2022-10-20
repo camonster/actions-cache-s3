@@ -23,7 +23,7 @@
   "author": "GitHub",
   "license": "MIT",
   "dependencies": {
-    "@actions/cache": "https://gitpkg.now.sh/camonster/actions-toolkit-s3/packages/cache?2ef340293bf424bcd87e953d50ee486706f3fd5c",
+    "@actions/cache": "https://gitpkg.now.sh/camonster/actions-toolkit-s3/packages/cache?a189d5c",
     "@actions/core": "^1.2.6",
     "@actions/exec": "^1.0.1",
     "@actions/io": "^1.1.0",
